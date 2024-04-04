@@ -13,14 +13,10 @@ const CardItem = React.memo(() => {
 
   const dispatch = useAppDispatch()
   const [saved, setSaved] = React.useState<boolean>(false)
-  const ref = React.useRef(false)
   const {gender, location, name, picture, email} = useAppSelector(state => state.userSlice)
 
   React.useEffect(() => {
-    if (ref.current) {
       dispatch(fetchUser())
-    }
-    ref.current = true
   }, [])
 
   const handleAddNewUser = () => {
