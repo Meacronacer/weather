@@ -18,10 +18,10 @@ const Navbar = () => {
             sx={{ mr: 2 }}
           >
           </IconButton>
-          <Link to='../weather/home' color='#fff' variant="h6" component={RouterLink} mr='40px'>
+          <Link to='../weather' color='#fff' variant="h6" component={RouterLink} mr='40px'>
             Weather
           </Link>
-          <Link to='../weather/users' color='#fff' variant="h6" component={RouterLink}>
+          <Link to='../users' color='#fff' variant="h6" component={RouterLink}>
             Users
           </Link>
         </Toolbar>

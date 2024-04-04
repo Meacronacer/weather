@@ -12,14 +12,14 @@ const SavedUsers = () => {
     const usersData = users.map((item, index) => <SavedUserCard key={index} {...item} id={index} />)
 
     return <Box 
-    sx={{width: '600px',
+    sx={{width: '850px',
     height: '500px',
     overflowY: 'scroll',
     overflowX: 'hidden',
     background: 'radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);',
     borderRadius: '6px'}} >
         <Navbar />
-        <Grid margin='auto' container spacing={1}>
+        <Grid margin='auto' container spacing={2}>
             {usersData}
         </Grid>
     </Box>

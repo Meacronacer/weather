@@ -18,7 +18,7 @@ const SavedUserCard: React.FC<IsavedUsers> = ({id, gender, location, name, pictu
   const dispatch = useAppDispatch()
 
     return (
-        <Grid item xs={4} md={4}>
+        <Grid item xs={3}>
             <Card sx={{
             background: '#6d4343',
             color: '#ffff',
